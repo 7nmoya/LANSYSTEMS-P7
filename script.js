@@ -124,16 +124,3 @@ document.addEventListener('DOMContentLoaded', function() {
     
 });
 
-// ========== FUNCIONES PARA NAVEGACIÓN (Opcional) ==========
-
-// Función para navegar a diferentes secciones
-function navigateTo(section) {
-    // Aquí puedes añadir la lógica para cambiar de página
-    // Por ejemplo, redirigir a otra página HTML
-    console.log('Navegando a: ' + section);
-    
-    // Ejemplo: window.location.href = section + '.html';
-}
-
-// Nota: Los enlaces en los botones ya tienen href="#seccion"
-// que se pueden cambiar a páginas reales como "sobre-nosotros.html"

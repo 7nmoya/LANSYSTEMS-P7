@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAN Systems - Sobre Nosotros</title>
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Barra de navegación superior -->
+    <nav class="top-nav">
+        <!-- Contenedor del icono hamburguesa -->
+        <div class="hamburger-container">
+            <!-- Botón hamburguesa para toggle del menú lateral -->
+            <button class="hamburger" id="hamburgerBtn" aria-label="Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        
+        <!-- Logo de LAN Systems - Imagen -->
+        <div class="logo">
+            <!-- Cambia 'logo.png' por el nombre de tu archivo de imagen -->
+            <img src="logo.png" alt="LAN Systems Logo" class="logo-image">
+        </div>
+    </nav>
+
+    <!-- Menú lateral izquierdo -->
+    <aside class="sidebar" id="sidebar">
+        <!-- Botones del menú lateral como enlaces -->
+        <a href="sobre-nosotros.html" class="sidebar-btn orange-btn">+</a>
+        <a href="servicios.html" class="sidebar-btn pink-btn">+</a>
+        <a href="contacto.html" class="sidebar-btn green-btn">+</a>
+        <a href="index.html" class="sidebar-btn blue-btn">+</a>
+    </aside>
+
+    <!-- Contenido principal de la página -->
+    <main class="main-content">
+        <!-- Título de la página -->
+        <div class="page-title-container">
+            <h1 class="page-title">Sobre Nosotros</h1>
+            <h2 class="page-subtitle">Conoce al equipo detrás de LAN Systems</h2>
+        </div>
+
+        <!-- Contenedor de los miembros del equipo -->
+        <div class="team-container">
+            <!-- Miembro 1: Lucas -->
+            <div class="team-member">
+                <!-- Enlace que envuelve el GIF para abrir el modal -->
+                <a href="#video-lucas">
+                    <img src="lucas.gif" alt="Lucas" class="team-avatar">
+                </a>
+                <!-- Nombre con fondo naranja -->
+                <div class="team-name orange-name">LUCAS</div>
+                <!-- Cargo -->
+                <p class="team-role">Encargado de<br>sistemas</p>
+            </div>
+
+            <!-- Miembro 2: Núria -->
+            <div class="team-member">
+                <!-- Enlace que envuelve el GIF para abrir el modal -->
+                <a href="#video-nuria">
+                    <img src="nuria.gif" alt="Núria" class="team-avatar">
+                </a>
+                <!-- Nombre con fondo rosa -->
+                <div class="team-name pink-name">NÚRIA</div>
+                <!-- Cargo -->
+                <p class="team-role">Encargada de<br>redes</p>
+            </div>
+
+            <!-- Miembro 3: Angelo -->
+            <div class="team-member">
+                <!-- Enlace que envuelve el GIF para abrir el modal -->
+                <a href="#video-angelo">
+                    <img src="angelo.gif" alt="Angelo" class="team-avatar">
+                </a>
+                <!-- Nombre con fondo azul -->
+                <div class="team-name blue-name">ANGELO</div>
+                <!-- Cargo -->
+                <p class="team-role">Encargado de<br>seguridad</p>
+            </div>
+        </div>
+
+        <!-- Modal de vídeo para Lucas -->
+        <div id="video-lucas" class="video-modal-overlay">
+            <div class="video-modal-content">
+                <!-- Enlace para cerrar (vuelve a la página sin #) -->
+                <a href="#" class="video-modal-close">&times;</a>
+                <!-- Contenedor del iframe con ratio 16:9 -->
+                <div class="video-iframe-container">
+                    <!-- iframe que carga el vídeo MP4 -->
+                    <iframe src="videos/lucas.mp4" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal de vídeo para Núria -->
+        <div id="video-nuria" class="video-modal-overlay">
+            <div class="video-modal-content">
+                <!-- Enlace para cerrar -->
+                <a href="#" class="video-modal-close">&times;</a>
+                <!-- Contenedor del iframe con ratio 16:9 -->
+                <div class="video-iframe-container">
+                    <!-- iframe que carga el vídeo MP4 -->
+                    <iframe src="videos/nuria.mp4" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal de vídeo para Angelo -->
+        <div id="video-angelo" class="video-modal-overlay">
+            <div class="video-modal-content">
+                <!-- Enlace para cerrar -->
+                <a href="#" class="video-modal-close">&times;</a>
+                <!-- Contenedor del iframe con ratio 16:9 -->
+                <div class="video-iframe-container">
+                    <!-- iframe que carga el vídeo MP4 -->
+                    <iframe src="videos/angelo.mp4" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Enlace al archivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAN Systems - Inicio</title>
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Barra de navegación superior -->
+    <nav class="top-nav">
+        <!-- Contenedor del icono hamburguesa -->
+        <div class="hamburger-container">
+            <!-- Botón hamburguesa para toggle del menú lateral -->
+            <button class="hamburger" id="hamburgerBtn" aria-label="Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        
+        <!-- Logo de LAN Systems - Imagen -->
+        <div class="logo">
+            <!-- Cambia 'logo.png' por el nombre de tu archivo de imagen -->
+            <img src="logo.png" alt="LAN Systems Logo" class="logo-image">
+        </div>
+    </nav>
+
+    <aside class="sidebar" id="sidebar">
+            <!-- Botones del menú lateral como enlaces -->
+                <a href="sobre-nosotros.html" class="sidebar-btn orange-btn">+</a>
+                <a href="servicios.html" class="sidebar-btn pink-btn">+</a>
+                <a href="contacto.html" class="sidebar-btn green-btn">+</a>
+                <a href="index.html" class="sidebar-btn blue-btn">+</a>
+    </aside>
+
+        <!-- Contenido principal de la página -->
+        <main class="main-content">
+        <!-- Título de la página -->
+        <div class="page-title-container">
+            <h1 class="page-title">Contacto</h1>
+        </div>
+
+        <!-- Contenedor del formulario de contacto -->
+        <div class="contact-form-container">
+        
+        <!-- Formulario de contacto -->
+        <form class="contact-form" action="#" method="POST">
+                
+            <!-- Campo de correo electrónico -->
+            <input 
+                type="email" 
+                class="contact-input" 
+                placeholder="Correo electrónico"
+                name="email"
+                required
+            >
+            
+            <!-- Campo desplegable del país -->
+            <select 
+                class="contact-input contact-select" 
+                name="country"
+                required
+            >
+                <option value="" disabled selected>Tipo de incidencia ></option>
+                <option value="Tecnica">Incidencia técnica</option>
+                <option value="Red">Incidencia de red</option>
+                <option value="Correo">Incidencia de correo</option>
+                <option value="Seguridad">Incidencia de seguridad</option>
+                <option value="Otro">Otro</option>
+            </select>
+
+            <!-- Campo de texto largo para incidencias/comentarios -->
+                <textarea 
+                    class="contact-input contact-textarea" 
+                    placeholder="Descripción..."
+                    name="message"
+                    rows="5"
+                    required
+                ></textarea>
+                
+                <!-- Botón de enviar -->
+                <button type="submit" class="contact-submit-btn">
+                    Enviar
+                </button>
+            </form>
+        </div>
+    </main>
+
+
+            <!-- Enlace al archivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -73,29 +73,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    
-    // ========== RESPONSIVE: OCULTAR SIDEBAR EN MÓVILES ==========
-    
-    // Función para verificar el ancho de la ventana
-    function checkWindowSize() {
-        // Si el ancho de la ventana es menor a 768px (móvil/tablet)
-        if (window.innerWidth < 768) {
-            // Oculta el sidebar por defecto
-            sidebar.classList.add('hidden');
-            sidebarVisible = false;
-            
-            // Quita el margen del contenido principal
-            document.querySelector('.main-content').style.marginLeft = '0';
-        } else {
-            // En pantallas grandes, muestra el sidebar
-            sidebar.classList.remove('hidden');
-            sidebarVisible = true;
-            
-            // Añade margen al contenido principal
-            document.querySelector('.main-content').style.marginLeft = '88px';
-        }
-    }
-    
     // Ejecuta la función al cargar la página
     checkWindowSize();
     
@@ -123,4 +100,3 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
 });
-
